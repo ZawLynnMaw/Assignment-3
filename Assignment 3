@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+<h1>Generating Random Number</h1>
+
+<h2>Random number will be show between 100 - 999</h2>
+<Button id="b1" onclick="clickFun()">Click Here To Generate Number</Button>
+<p id="demo">Random Number is :</p>
+
+<script>
+    function clickFun(){
+document.getElementById("demo").innerHTML = "Random Number is : " + Math.floor(Math.random()*(999-100+1)+100);
+}
+</script>
+</body>
+</html>
